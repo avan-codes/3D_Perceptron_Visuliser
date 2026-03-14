@@ -737,8 +737,8 @@
             if (layerSizes.some(n => n > 500)) {
                 return showError('Max 500 neurons per layer allowed.');
             }
-            if (layerSizes.length > 12) {
-                return showError('Max 12 layers supported.');
+            if (layerSizes.length > 1000) {
+                return showError('Max 1000 layers supported.');
             }
 
             // Sync layers input
